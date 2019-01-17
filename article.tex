@@ -1,0 +1,281 @@
+\documentclass[]{article}
+\makeatletter\if@twocolumn\PassOptionsToPackage{switch}{lineno}\else\fi\makeatother
+
+\usepackage{amsfonts,amssymb,amsbsy,latexsym,amsmath,tabulary,graphicx,xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Following additional macros are required to function some 
+% functions which are not available in the class used.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{url,multirow,morefloats,floatflt,cancel,tfrupee}
+\makeatletter
+
+
+\AtBeginDocument{\@ifpackageloaded{textcomp}{}{\usepackage{textcomp}}}
+\makeatother
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{pifont}
+\usepackage[nointegrals]{wasysym}
+\urlstyle{rm}
+\makeatletter
+
+%%%For Table column width calculation.
+\def\mcWidth#1{\csname TY@F#1\endcsname+\tabcolsep}
+
+%%Hacking center and right align for table
+\def\cAlignHack{\rightskip\@flushglue\leftskip\@flushglue\parindent\z@\parfillskip\z@skip}
+\def\rAlignHack{\rightskip\z@skip\leftskip\@flushglue \parindent\z@\parfillskip\z@skip}
+
+
+%\if@twocolumn\usepackage{dblfloatfix}\fi
+\usepackage{ifxetex}
+\ifxetex\else\if@twocolumn\usepackage{dblfloatfix}\fi\fi
+
+\AtBeginDocument{
+\expandafter\ifx\csname eqalign\endcsname\relax
+\def\eqalign#1{\null\vcenter{\def\\{\cr}\openup\jot\m@th
+  \ialign{\strut$\displaystyle{##}$\hfil&$\displaystyle{{}##}$\hfil
+      \crcr#1\crcr}}\,}
+\fi
+}
+
+%For fixing hardfail when unicode letters appear inside table with endfloat
+\AtBeginDocument{%
+  \@ifpackageloaded{endfloat}%
+   {\renewcommand\efloat@iwrite[1]{\immediate\expandafter\protected@write\csname efloat@post#1\endcsname{}}}{\newif\ifefloat@tables}%
+}%
+
+\def\BreakURLText#1{\@tfor\brk@tempa:=#1\do{\brk@tempa\hskip0pt}}
+\let\lt=<
+\let\gt=>
+\def\processVert{\ifmmode|\else\textbar\fi}
+\let\processvert\processVert
+
+\@ifundefined{subparagraph}{
+\def\subparagraph{\@startsection{paragraph}{5}{2\parindent}{0ex plus 0.1ex minus 0.1ex}%
+{0ex}{\normalfont\small\itshape}}%
+}{}
+
+% These are now gobbled, so won't appear in the PDF.
+\newcommand\role[1]{\unskip}
+\newcommand\aucollab[1]{\unskip}
+  
+\@ifundefined{tsGraphicsScaleX}{\gdef\tsGraphicsScaleX{1}}{}
+\@ifundefined{tsGraphicsScaleY}{\gdef\tsGraphicsScaleY{.9}}{}
+% To automatically resize figures to fit inside the text area
+\def\checkGraphicsWidth{\ifdim\Gin@nat@width>\linewidth
+	\tsGraphicsScaleX\linewidth\else\Gin@nat@width\fi}
+
+\def\checkGraphicsHeight{\ifdim\Gin@nat@height>.9\textheight
+	\tsGraphicsScaleY\textheight\else\Gin@nat@height\fi}
+
+\def\fixFloatSize#1{}%\@ifundefined{processdelayedfloats}{\setbox0=\hbox{\includegraphics{#1}}\ifnum\wd0<\columnwidth\relax\renewenvironment{figure*}{\begin{figure}}{\end{figure}}\fi}{}}
+\let\ts@includegraphics\includegraphics
+
+\def\inlinegraphic[#1]#2{{\edef\@tempa{#1}\edef\baseline@shift{\ifx\@tempa\@empty0\else#1\fi}\edef\tempZ{\the\numexpr(\numexpr(\baseline@shift*\f@size/100))}\protect\raisebox{\tempZ pt}{\ts@includegraphics{#2}}}}
+
+%\renewcommand{\includegraphics}[1]{\ts@includegraphics[width=\checkGraphicsWidth]{#1}}
+\AtBeginDocument{\def\includegraphics{\@ifnextchar[{\ts@includegraphics}{\ts@includegraphics[width=\checkGraphicsWidth,height=\checkGraphicsHeight,keepaspectratio]}}}
+
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+
+\def\URL#1#2{\@ifundefined{href}{#2}{\href{#1}{#2}}}
+
+%%For url break
+\def\UrlOrds{\do\*\do\-\do\~\do\'\do\"\do\-}%
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+
+
+
+\edef\fntEncoding{\f@encoding}
+\def\EUoneEnc{EU1}
+\makeatother
+\def\floatpagefraction{0.8} 
+\def\dblfloatpagefraction{0.8}
+\def\style#1#2{#2}
+\def\xxxguillemotleft{\fontencoding{T1}\selectfont\guillemotleft}
+\def\xxxguillemotright{\fontencoding{T1}\selectfont\guillemotright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\companyName{Primerlabs}
+\def\companyShortName{Primer Labs}
+
+
+\usepackage[paperheight=11in,paperwidth=8.5in,top=0.93in,bottom=1.1in,left=6cm,right=2cm]{geometry}%,headsep=0.3in,footskip=0.49in
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{sans}
+\usepackage[absolute]{textpos}
+\RequirePackage[titles]{tocloft}
+%\usepackage{helvet} 
+\newcommand{\newsymb}{
+\begin{tikzpicture}
+\filldraw[fill=black,draw=yellow] circle (6pt);
+\end{tikzpicture}
+}
+
+
+\newcount\cnta
+\cftsetpnumwidth{0pt}
+\renewcommand\cftsecpagefont {\global\cnta}
+\renewcommand\cftsecafterpnum {%
+	  \makebox[0pt][l]%
+     {\kern-\dimexpr\linewidth+2em\relax\makebox[1em][r]{\the\cnta}}%
+}
+
+\makeatletter
+\renewcommand*{\l@section}[2]{%
+  \ifnum \c@tocdepth >\z@
+    \if@cfthaschapter
+      \vskip \cftbeforesecskip
+    \else
+      \addpenalty\@secpenalty
+      \addvspace{\cftbeforesecskip}
+    \fi
+    {%
+    \setlength{\cftsecindent}{1em}
+    \leftskip \cftsecindent\relax
+     \rightskip \@tocrmarg
+     \parfillskip -\rightskip
+     \raggedright
+     \parindent \cftsecindent\relax\@afterindenttrue
+     \interlinepenalty\@M
+     \leavevmode
+     \@tempdima \cftsecnumwidth\relax
+     \let\@cftbsnum \cftsecpresnum
+     \let\@cftasnum \cftsecaftersnum
+     \let\@cftasnumb \cftsecaftersnumb
+     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+     \makebox[0pt][r]{\bfseries#2\hspace*{.4em}}%
+     {\cftsecfont #1}\nobreak\par}%
+  \fi}
+\def\author#1{\gdef\@author{\hskip-\dimexpr(\tabcolsep)\hskip1pt\parbox{\dimexpr\textwidth-1pt}{\bfseries\raggedright \textit{#1}}}}
+
+\let\@whiteDate\@empty\def\whiteDate#1{\gdef\@whiteDate{{#1}}}
+\def\NormalBaseline{\def\baselinestretch{1.1}}
+\def\title#1{\gdef\@title{\raggedright\bfseries\def\baselinestretch{1}\selectfont\selectfont#1}}
+\renewenvironment{abstract}
+{\hspace*{-15pc}\vspace*{-3.3pc}\vbox to -22pt \bgroup\begin{minipage}{1.7in}{\fontsize{8}{10}\selectfont\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}\tableofcontents\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}}\vspace{1cm}\end{minipage}\egroup\vspace*{-.4pc}\trivlist\item[]\leftskip1pt\hfill\hfill\mbox{\null}\par\noindent\ignorespaces\color{black} }{\par\noindent\endtrivlist}
+\newenvironment{copys}[1][\unskip]{%
+\par
+\noindent 
+\footnotesize
+\noindent}
+{}
+\fancypagestyle{plain}{\renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}\fancyhf{}\fancyhead[L]{\hspace*{-12pc}\companyShortName\space \color{gray!90}White Paper}}
+
+
+
+\fancypagestyle{headings}{\renewcommand{\headrulewidth}{0pt}\fancyhf{}\fancyfoot[R]{\companyShortName \space{\color{gray!90}White Paper}\quad\thepage}}\pagestyle{headings}
+
+
+\linespread{1.3}\date{}  
+\usepackage[noindentafter,explicit]{titlesec}
+\setcounter{secnumdepth}{5}
+ 
+\titleformat{\section}[hang]{\NormalBaseline\filright\large\bfseries\boldmath}
+{\large\thesection\hspace{-6pt}}
+{10pt}
+{#1}
+[]
+\titleformat{\subsection}[hang]{\NormalBaseline\filright\bfseries\boldmath}
+{\thesubsection\hspace{-6pt}}
+{10pt}
+{#1}
+[]
+\titleformat{\subsubsection}[hang]{\NormalBaseline\filright\bfseries\boldmath}
+{\thesubsubsection\hspace{-6pt}}
+{10pt}
+{#1\addcontentsline{toc}{subsubsection}{#1 }}
+[]
+\titleformat{\paragraph}[runin]{\NormalBaseline\filright\bfseries\boldmath}
+{\theparagraph\hspace{-6pt}}
+{10pt}
+{#1}
+[]
+\titleformat{\subparagraph}[runin]{\NormalBaseline\filright}
+{\thesubparagraph\hspace{-6pt}}
+{10pt}
+{#1}
+[]
+
+\titlespacing{\section}{0pt}{1.5\baselineskip}{.2\baselineskip}  
+\titlespacing{\subsection}{0pt}{1\baselineskip}{.2\baselineskip}  
+\titlespacing{\subsubsection}{0pt}{1.5\baselineskip}{.2\baselineskip}  
+\titlespacing{\paragraph}{0pt}{.5\baselineskip}{10pt}  
+\titlespacing{\subparagraph}{0pt}{.5\baselineskip}{10pt}               
+
+\addtocontents{toc}
+{\begingroup\protect\let\protect\ttl@gmk\protect\relax\protect}
+\makeatother
+\renewcommand{\contentsname}{\hspace*{-1pc}{Table of contents}}
+
+
+\usepackage[numbers,sort&compress]{natbib}
+\bibliographystyle{abbrvnat}
+
+
+\def\copyRight{}
+\makeatletter\fancypagestyle{plainx}{\renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}\fancyhf{}\fancyfoot[R]{\thepage}\fancyfoot[L]{\begin{copys}\copyRight~\\[8pt]\tiny\copyright\space \the\year\space\companyName.\space All rights reserved.~\\\ifx\@whiteDate\@empty\today\else\@whiteDate\fi\end{copys}}}\makeatother
+\begin{document}
+
+
+\def\authorCount{0}
+\def\affCount{0}
+
+\def\journalTitle{White Paper- Primerlabs}
+
+\title{An incremental approach for building a dialog based intelligent agent for guided learning.}
+\author{Siddharth Kanungo}
+
+
+\maketitle 
+\def\RunningTitle{{An incremental approach for building a dialog based intelligent agent for guided learning.}}
+
+\begin{abstract}
+  \textbf{Abstract}
+  A text-based AI conversational agent would allow guided learning to be more personalized and adaptive to the needs of its user. Part of the solution is developing an interface through which the conversational agent interacts with a user and other part lies in developing courses as scripts which are to be used by the agents to instruct a user to learn a subject. Such a system would allow for greater freedom to enhance user knowledge database which was not earlier possible. Apart from learning, the interface would also the user to retain his learning through generated personalized notebooks and utilizing spaced-repetitions.
+\end{abstract}
+    
+\section{Introduction}
+
+ This is introduction\unskip~\cite{zappella}
+\subsection{Bloom 2 Problm}
+ t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+ t is a long established fact that asad reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+ \subsection[Gatto Critisicm]{Gatto Critisicm}
+ t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+
+t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+
+\subsection{New Sub Secti}
+t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+
+\section{New Sections}
+t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+
+\subsection{New Sub Secti}
+t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+
+\section{New Section}
+t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+\section{New Section}
+t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+\section{New Section}
+t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+\section{New Section}
+t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+
+
+\subsection{The need for Primer}\addtocontents{toc}{\protect\endgroup}
+\medskip
+\addcontentsline{toc}{section}{References}
+\bibliography{article}
+ \thispagestyle{plainx}
+\end{document}
