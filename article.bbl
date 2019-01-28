@@ -1,9 +1,17 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Anderson et~al.(2001)Anderson, Krathwohl, Airasian, Cruikshank, Mayer,
+  Pintrich, Raths, and Wittrock]{anderson2001taxonomy}
+L.~W. Anderson, D.~R. Krathwohl, P.~W. Airasian, K.~A. Cruikshank, R.~E. Mayer,
+  P.~R. Pintrich, J.~Raths, and M.~C. Wittrock.
+\newblock A taxonomy for learning, teaching, and assessing: A revision of
+  bloom’s taxonomy of educational objectives, abridged edition.
+\newblock \emph{White Plains, NY: Longman}, 2001.
 
 \bibitem[Bloom(1984)]{doi:10.3102/0013189X013006004}
 B.~S. Bloom.
@@ -12,6 +20,58 @@ B.~S. Bloom.
 \newblock \emph{Educational Researcher}, 13\penalty0 (6):\penalty0 4--16, 1984.
 \newblock \doi{10.3102/0013189X013006004}.
 \newblock URL \url{https://doi.org/10.3102/0013189X013006004}.
+
+\bibitem[BLOOM’S(1965)]{bloom1965bloom}
+T.~M.~E. BLOOM’S.
+\newblock \emph{Bloom’s taxonomy of educational objectives}.
+\newblock Longman, 1965.
+
+\bibitem[Gatto(2017)]{gatto2017dumbing}
+J.~T. Gatto.
+\newblock \emph{Dumbing Us Down: The Hidden Curriculum of Compulsory
+  Schooling}.
+\newblock New Society Publishers, 2017.
+
+\bibitem[Gupta(2000)]{gupta2000liberating}
+P.~Gupta.
+\newblock Liberating education from the chains of imperialism.
+\newblock \emph{Learning Societies: A Reflective and Generative Framework.
+  Udaipur: Shikshantar—The People's Institute for Rethinking Education and
+  Development}, 2000.
+
+\bibitem[Hofstadter(1995)]{hofstadter1995fluid}
+D.~R. Hofstadter.
+\newblock \emph{Fluid concepts and creative analogies: Computer models of the
+  fundamental mechanisms of thought.}
+\newblock Basic books, 1995.
+
+\bibitem[Illich(1973)]{illich1973deschooling}
+I.~Illich.
+\newblock \emph{Deschooling society}.
+\newblock Harmondsworth, Middlesex, 1973.
+
+\bibitem[Lockhart(2009)]{lockhart2009mathematician}
+P.~Lockhart.
+\newblock A mathematician’s lament: How school cheats us out of our most
+  fascinating and imaginative art form.
+\newblock \emph{New York, NY: Bellevue Literary Review (Quotation retrieved
+  August 1, 2016, from http://www. goodreads. com/quotes/tag}, 2009.
+
+\bibitem[Newport(2016)]{newport2016deep}
+C.~Newport.
+\newblock \emph{Deep work: Rules for focused success in a distracted world}.
+\newblock Hachette UK, 2016.
+
+\bibitem[Oakley(2017)]{oakley2017mindshift}
+B.~A. Oakley.
+\newblock \emph{Mindshift: Break through obstacles to learning and discover
+  your hidden potential}.
+\newblock Penguin, 2017.
+
+\bibitem[Stephenson(1998)]{stephenson1998diamond}
+N.~Stephenson.
+\newblock \emph{The diamond age}.
+\newblock Penguin UK, 1998.
 
 \bibitem[Stockard et~al.(2018)Stockard, Wood, Coughlin, and
   Khoury]{doi:10.3102/0034654317751919}

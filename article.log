@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.15)  17 JAN 2019 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.15)  28 JAN 2019 13:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/primer/Primer/Latex/Foundations_of_a_dialog_based_intelligent_tutor-2019-01-15-16-19(1)/article.tex
-(/home/primer/Primer/Latex/Foundations_of_a_dialog_based_intelligent_tutor-2019-01-15-16-19(1)/article.tex
+**"/home/primer/Primer/Latex/WhitePaper - Primer/article.tex"
+(/home/primer/Primer/Latex/WhitePaper - Primer/article.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 7 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -197,7 +197,7 @@ Package: floatflt 1997/07/16 v. 1.31
 \outputpretest=\toks22
 ) (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
-) (./tfrupee.sty
+) (/home/primer/Primer/Latex/WhitePaper - Primer/tfrupee.sty
 Package: tfrupee 2010/12/15 LaTeX Support for the TechFat Rupee symbols by TechFat (http://techfat.blogspot.com/2010/07/new-open-source-india-rupee-font.html). Adapted for use with TeX by Palle Jorgensen, hamselv(a)pallej.dk
 ) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
@@ -572,42 +572,64 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidth=\dimen197
 \titlewidthlast=\dimen198
 \titlewidthfirst=\dimen199
-) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count143
+\lst@gtempboxa=\box45
+\lst@token=\toks39
+\lst@length=\count144
+\lst@currlwidth=\dimen256
+\lst@column=\count145
+\lst@pos=\count146
+\lst@lostspace=\dimen257
+\lst@width=\dimen258
+\lst@newlines=\count147
+\lst@lineno=\count148
+\lst@maxwidth=\dimen259
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count149
+\lst@skipnumbers=\count150
+\lst@framebox=\box46
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+ (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip94
 \bibsep=\skip95
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count143
-) (./article.aux)
+\c@NAT@ctr=\count151
+) (/home/primer/Primer/Latex/WhitePaper - Primer/article.aux)
 \openout1 = `article.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 252.
+LaTeX Font Info:    ... okay on input line 252.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count144
-\scratchdimen=\dimen256
-\scratchbox=\box45
-\nofMPsegments=\count145
-\nofMParguments=\count146
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count147
-\MPscratchDim=\dimen257
-\MPnumerator=\count148
-\makeMPintoPDFobject=\count149
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count152
+\scratchdimen=\dimen260
+\scratchbox=\box47
+\nofMPsegments=\count153
+\nofMParguments=\count154
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count155
+\MPscratchDim=\dimen261
+\MPnumerator=\count156
+\makeMPintoPDFobject=\count157
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -733,93 +755,185 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box46
-Package hyperref Info: Link coloring OFF on input line 222.
+\AtBeginShipoutBox=\box48
+Package hyperref Info: Link coloring OFF on input line 252.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count150
+\c@section@level=\count158
 )
-LaTeX Info: Redefining \ref on input line 222.
-LaTeX Info: Redefining \pageref on input line 222.
-LaTeX Info: Redefining \nameref on input line 222.
- (./article.out) (./article.out)
+LaTeX Info: Redefining \ref on input line 252.
+LaTeX Info: Redefining \pageref on input line 252.
+LaTeX Info: Redefining \nameref on input line 252.
+ (/home/primer/Primer/Latex/WhitePaper - Primer/article.out) (/home/primer/Primer/Latex/WhitePaper - Primer/article.out)
 \@outlinefile=\write4
 \openout4 = `article.out'.
 
  ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 235.
+\c@lstlisting=\count159
+LaTeX Font Info:    Try loading font information for U+msa on input line 265.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 235.
+LaTeX Font Info:    Try loading font information for U+msb on input line 265.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 235.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 265.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 235.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 265.
  (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 235.
+(Font)              using `OT1/cmss/bx/n' instead on input line 265.
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 235--235
+Overfull \hbox (6.0pt too wide) in paragraph at lines 265--265
  [][] 
  []
 
-(./article.toc)
+(/home/primer/Primer/Latex/WhitePaper - Primer/article.toc
+Missing character: There is no â in font cmss8!
+Missing character: There is no € in font cmss8!
+Missing character: There is no ™ in font cmss8!
+)
 \tf@toc=\write5
 \openout5 = `article.toc'.
 
 
-Overfull \vbox (129.91655pt too high) detected at line 237
+Overfull \vbox (266.41687pt too high) detected at line 267
  []
 
 
-LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 248.
+Overfull \hbox (7.82748pt too wide) in paragraph at lines 273--274
+\OT1/cmss/m/n/10 The tra-di-tional meth-ods for guided learn-ing, such as text-books, recorded lec-tures, and instructor-
+ []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2] [3] (./article.bbl)
-LaTeX Font Info:    Try loading font information for TS1+cmss on input line 284.
+]
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no œ in font cmss10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no œ in font cmss10!
+
+Overfull \hbox (0.56998pt too wide) in paragraph at lines 297--298
+[]\OT1/cmss/bx/n/10 Emotional & in-tel-lec-tual de-pen-dency, pro-vi-sional self-esteem\OT1/cmss/m/n/10 : Stars, grades, prizes,
+ []
+
+[2] [3]
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 342.
+
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ” in font cmss10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ” in font cmss10!
+[4]
+LaTeX Font Info:    Try loading font information for TS1+cmss on input line 360.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 284.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 284.
- (./article.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 284.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 284.
+) [5]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 404.
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
+<bloom.png, id=235, 1003.75pt x 752.8125pt>
+File: bloom.png Graphic file (type png)
+<use bloom.png>
+Package pdftex.def Info: bloom.png  used on input line 428.
+(pdftex.def)             Requested size: 464.00638pt x 348.0095pt.
+Missing character: There is no â in font cmssbx10!
+Missing character: There is no € in font cmssbx10!
+Missing character: There is no ™ in font cmssbx10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
+ [6] [7 </home/primer/Primer/Latex/WhitePaper - Primer/bloom.png>] [8]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 531.
+
+<model.png, id=279, 1845.89626pt x 1189.44376pt>
+File: model.png Graphic file (type png)
+<use model.png>
+Package pdftex.def Info: model.png  used on input line 534.
+(pdftex.def)             Requested size: 386.67297pt x 249.15533pt.
+[9 </home/primer/Primer/Latex/WhitePaper - Primer/model.png>] [10]
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 602.
+LaTeX Font Info:    No file OMScmss.fd. on input line 602.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbar' on input line 602.
+
+<framework.png, id=320, 2237.35875pt x 864.22874pt>
+File: framework.png Graphic file (type png)
+<use framework.png>
+Package pdftex.def Info: framework.png  used on input line 609.
+(pdftex.def)             Requested size: 386.67297pt x 149.35654pt.
+[11] [12 </home/primer/Primer/Latex/WhitePaper - Primer/framework.png>] [13] [14] [15]
+<sr4.png, id=387, 2999.205pt x 1987.425pt>
+File: sr4.png Graphic file (type png)
+<use sr4.png>
+Package pdftex.def Info: sr4.png  used on input line 761.
+(pdftex.def)             Requested size: 386.67297pt x 256.22119pt.
+ [16 </home/primer/Primer/Latex/WhitePaper - Primer/sr4.png>] [17] (/home/primer/Primer/Latex/WhitePaper - Primer/article.bbl
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
+ [18]
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
+Missing character: There is no â in font cmssi10!
+Missing character: There is no € in font cmssi10!
+Missing character: There is no ™ in font cmssi10!
+Missing character: There is no â in font cmssi10!
+Missing character: There is no € in font cmssi10!
+Missing character: There is no ” in font cmssi10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
+) [19]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 823.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 823.
+ (/home/primer/Primer/Latex/WhitePaper - Primer/article.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 823.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 823.
 Package rerunfilecheck Info: File `article.out' has not changed.
-(rerunfilecheck)             Checksum: 35C5D71FB88D35247D8BE40C33679BEA;693.
+(rerunfilecheck)             Checksum: C86CD558D37F913719FFCDF8C28495BE;1977.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 284.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 823.
  ) 
 Here is how much of TeX's memory you used:
- 18327 strings out of 494847
- 330888 string characters out of 6179080
- 397697 words of memory out of 5000000
- 21249 multiletter control sequences out of 15000+600000
- 15987 words of font info for 65 fonts, out of 8000000 for 9000
+ 19956 strings out of 494847
+ 354299 string characters out of 6179080
+ 630929 words of memory out of 5000000
+ 22704 multiletter control sequences out of 15000+600000
+ 16628 words of font info for 67 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 55i,11n,54p,739b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/primer/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss0500.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
-Output written on article.pdf (4 pages, 61266 bytes).
+ 55i,13n,54p,959b,1731s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/primer/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss0500.600pk> </home/primer/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "/home/primer/Primer/Latex/WhitePaper - Primer/article.pdf" (19 pages, 664073 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 510 PDF objects out of 1000 (max. 8388607)
+ 463 compressed objects within 5 object streams
+ 172 named destinations out of 1000 (max. 500000)
+ 305 words of extra memory for PDF output out of 10000 (max. 10000000)
 
